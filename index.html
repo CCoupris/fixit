@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FIXIT</title>
+    <style href="style.css"></style>
 </head>
 <body>
-    
+    <form method="post" enctype="multipart/form-data">
+        <div>
+          <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
+          <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png">
+        </div>
+        <div class="preview">
+          <p>Aucun fichier sélectionné pour le moment</p>
+        </div>
+        <div>
+          <button>Envoyer</button>
+        </div>
+      </form>
+      <script src="script.js"></script>
 </body>
 </html>
