@@ -1,0 +1,29 @@
+{
+  "name": "fixit",
+  "version": "1.0.0",
+  "description": "Scan it, fix it\r ![Logo Fix It](https://cdn.discordapp.com/attachments/507123772910731267/654042700374605855/Meta.png)",
+  "main": "script.js",
+  "dependencies": {
+    "quagga": "^0.12.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "quagga": "^0.12.1"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCoupris/fixit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCoupris/fixit/issues"
+  },
+  "homepage": "https://github.com/CCoupris/fixit#readme"
+}

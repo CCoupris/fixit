@@ -8,7 +8,7 @@
     <style href="style.css"></style>
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data">
+    <!--<form method="post" enctype="multipart/form-data">
         <div>
           <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
           <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png">
@@ -19,7 +19,17 @@
         <div>
           <button>Envoyer</button>
         </div>
+      </form>-->
+
+      <form>
+          <div class="input-field">
+              <label for="isbn_input">EAN:</label>
+              <input id="isbn_input" class="isbn" type="text" />
+              <button type="button" class="icon-barcode button scan">&nbsp;</button>
+              <input type="file" id="file" capture/>
+          </div>
       </form>
+      <script src="node_modules\quagga\dist/quagga.js"></script>
       <script src="script.js"></script>
 </body>
 </html>
