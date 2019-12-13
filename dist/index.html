@@ -5,30 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FIXIT</title>
-    <style href="style.css"></style>
-</head>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+<script src="/style.e308ff8e.js"></script></head>
 <body>
-    <!--<form method="post" enctype="multipart/form-data">
-        <div>
-          <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
-          <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png">
-        </div>
-        <div class="preview">
-          <p>Aucun fichier sélectionné pour le moment</p>
-        </div>
-        <div>
-          <button>Envoyer</button>
-        </div>
-      </form>-->
-
-      <form>
-          <div class="input-field">
-              <label for="isbn_input">EAN:</label>
-              <input id="isbn_input" class="isbn" type="text">
-              <button type="button" class="icon-barcode button scan">&nbsp;</button>
-              <input type="file" id="file" capture="">
-          </div>
-      </form>
+      <div class="scanbox">
+        <form class="scanboxcontent">
+            <div class="input-field">
+                <label for="isbn_input">EAN:</label>
+                <input id="isbn_input" class="isbn" type="text">
+                <button type="button" class="icon-barcode button scan" style="padding: 0;"></button>
+                <input type="file" id="file" capture="" style="display: none;">
+            </div>
+        </form>
+      </div>
       <script src="/quagga.d6bf21dc.js"></script>
       <script src="/script.75da7f30.js"></script>
 </body>
