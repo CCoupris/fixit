@@ -1,5 +1,110 @@
 body
 {
+  display: flex;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+}
+
+.container
+{
+  justify-content: center;
+  width: 400px;
   margin: 0 auto;
-  width: 100vw;
+}
+
+.first-page
+{
+  position: absolute;
+  left: 22px;
+  top: 41px;
+}
+
+.computer
+{
+  flex-flow: column wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title
+{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #B42F3C;
+}
+
+.scan
+{
+  background: #B42F3C;
+  height: 22px;
+  width: 130px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 0;
+
+}
+
+.next-page
+{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.screwdriver_anchor
+{
+  margin-top: 6vh;
+  animation: move 1.5s infinite linear;
+}
+
+@keyframes move {
+  0%{
+    transform: translate(0%,0);
+  }
+  25%{
+    transform: translate(0%,5%);
+  }
+  50%{
+    transform: translate(0%,0);
+  }
+  75%{
+    transform: translate(0%,-5%);
+  }
+  100%{
+    transform: translate(0%,0);
+  }
+}
+
+.discover
+{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #B42F3C;
+  text-decoration: none;
+  flex-flow: column wrap;
+}
+
+a
+{
+  text-decoration: none;
 }
