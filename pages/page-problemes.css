@@ -1,0 +1,130 @@
+.conatiner
+{
+    height: 0px;
+    width: 100%;
+    position: relative;
+}
+
+    /* Ligne inactive */
+.seek-bar
+{
+    position: absolute;
+    left: 6.11%;
+    top: 4.65%;
+    height: 5px;
+    width: 80%;
+    background: #F2F2F2;
+}
+
+.object-founded img
+{
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    left: 137px;
+    top: 56px;
+}
+
+.object-name
+{
+    position: absolute;
+    width: 80px;
+    height: 27px;
+    left: 148px;
+    top: 163px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B42F3C;
+}
+
+.problem-choices p
+{
+    /* Quel est votre problème ? */
+    position: absolute;
+    width: 283px;
+    height: 33px;
+    left: 10%;
+    top: 20%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+    color: #474747;
+}
+
+.first-row
+{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+.second-row
+{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.batery-button
+{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.broken-screen-button
+{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.connectors-button
+{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.photo-button
+{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.continue-button
+{
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    width: 100px;
+    height: 35px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: #B42F3C;
+    color: #fff;
+}
