@@ -8,14 +8,14 @@ body
 
 .container
 {
-  justify-content: center;
   width: 400px;
   margin: 0 auto;
 }
 
+
 .first-page
 {
-  position: absolute;
+  justify-content: center;
   left: 22px;
   top: 41px;
 }
