@@ -22,7 +22,7 @@ body
 
 .container .research-page .title
 {
-  margin-right: 25px;  
+  margin-right: 25px;
   margin-bottom: 63px;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -74,7 +74,7 @@ body
     color: #474747;
 }
 
-.container .research-page .research-links
+.container .research-page .research-links, a, a:hover
 {
     margin-top: 80px;
     line-height: 33px;

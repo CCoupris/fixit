@@ -22,7 +22,7 @@ body
 
 .container .lecture-impossible-page .title
 {
-  margin-right: 87px;  
+  margin-right: 87px;
   margin-bottom: 50px;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -88,10 +88,7 @@ body
   color: #474747;
 }
 
-.container .lecture-impossible-page .other-links .enter
+.container .lecture-impossible-page .other-links .enter, a, a:hover
 {
   color: #474747;
 }
-
-
-

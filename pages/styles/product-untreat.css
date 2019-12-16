@@ -22,7 +22,7 @@ body
 
 .container .product-untreat-page .title
 {
-  margin-right: 195px;  
+  margin-right: 195px;
   margin-bottom: 50px;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -77,7 +77,7 @@ body
   color: #474747;
 }
 
-.container .product-untreat-page .other-links .import
+.container .product-untreat-page .other-links .import, a, a:hover
 {
   color: #474747;
 }
