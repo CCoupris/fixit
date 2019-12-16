@@ -1,8 +1,9 @@
-.conatiner
+.container
 {
-    height: 0px;
-    width: 100%;
-    position: relative;
+  width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
     /* Progress step bar */
@@ -75,7 +76,7 @@
     background: #B42F3C;
     border: 4px solid transparent;
 }
-  
+
 /*Step's progress bar in complete state*/
 .progress-step.is-complete:after {
     background: #b42f3c;
@@ -107,11 +108,8 @@
 
 .object-name
 {
-    position: absolute;
     width: 80px;
     height: 27px;
-    left: 148px;
-    top: 163px;
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
@@ -121,17 +119,22 @@
     align-items: center;
     text-align: center;
     color: #B42F3C;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     /* Problem choices */
+
+.problem-choices
+{
+  text-align: center;
+}
+
 .problem-choices p
 {
     /* Quel est votre problème ? */
-    position: absolute;
     width: 283px;
     height: 33px;
-    left: 10%;
-    top: 20%;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -140,19 +143,8 @@
     /* identical to box height */
     text-align: center;
     color: #474747;
-}
-
-.first-row
-{
-    position: absolute;
-    top: 32%;
-    left: 10%;
-}
-.second-row
-{
-    position: absolute;
-    top: 55%;
-    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .batery-button
@@ -203,9 +195,7 @@
     /* Next button to continue the navigation */
 .continue-button
 {
-    position: absolute;
-    top: 85%;
-    left: 35%;
+
     width: 100px;
     height: 35px;
     font-family: Nunito;
@@ -219,4 +209,6 @@
     color: #fff;
     cursor: pointer;
     outline: none;
+    display: block;
+    margin: auto;
 }
