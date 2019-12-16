@@ -1,3 +1,8 @@
+const page = document.querySelector(".run_page")
+page.setAttribute("href","pages/page-problemes.html")
+
+
+
 
 var Quagga = window.Quagga;
 var code = 0
@@ -60,5 +65,3 @@ function getAPIdata() {
                 throw err 
             })
 }
-
-/*console.log("https://www.batzo.net/api/v1/products?barcode="+code+"&key=58KK4EZzJhVGp33UUTz0SDbErwXDbSJUqFO.name")*/
