@@ -1,0 +1,82 @@
+body
+{
+  display: flex;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.container
+{
+  width: 360px;
+  margin: 0 auto;
+}
+
+.container .research-page
+{
+  justify-content: center;
+  height: 95vh;
+}
+
+.container .research-page .title
+{
+  margin-right: 25px;  
+  margin-bottom: 63px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 33px;
+  color: #474747;
+}
+
+.container .research-page .import-caracter
+{
+  flex-flow: column wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .research-page .import-button
+{
+    margin-top: 30px;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 154px;
+    height: 40px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background: #B42F3C;
+}
+
+.container .research-page .import-button .uppercase
+{
+    color: white;
+    font-family: "Nunito";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container .research-page .sub-title
+{
+    margin-top: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 10px;
+    color: #474747;
+}
+
+.container .research-page .research-links
+{
+    margin-top: 80px;
+    line-height: 33px;
+    color: #474747;
+}
