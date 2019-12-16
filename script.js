@@ -1,4 +1,6 @@
+
 var Quagga = window.Quagga;
+var code = 0
 var App = {
     _scanner: null,
     init: function() {
@@ -12,6 +14,8 @@ var App = {
             .toPromise()
             .then(function(result) {
                 document.querySelector('input.isbn').value = result.codeResult.code
+                code = result.codeResult.code
+                getAPIdata()
             })
             .catch(function() {
                 document.querySelector('input.isbn').value = "Not Found"
@@ -41,3 +45,20 @@ var App = {
     }
 }
 App.init()
+
+function getAPIdata() {
+    const proxyurl = "https://cors-anywhere.herokuapp.com/" // Use a proxy to avoid CORS error
+    const api_key = "dak11o3uirjgcd561m0751e5l0y7bl"
+    const url = proxyurl + "https://api.barcodelookup.com/v2/products?barcode="+code+"&formatted=y&key=" + api_key
+    fetch(url)
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById("BarcodeNumber").innerHTML = (data.products[0].barcode_number)
+                document.getElementById("ProductName").innerHTML = (data.products[0].product_name)
+            })
+            .catch(err => { 
+                throw err 
+            })
+}
+
+/*console.log("https://www.batzo.net/api/v1/products?barcode="+code+"&key=58KK4EZzJhVGp33UUTz0SDbErwXDbSJUqFO.name")*/

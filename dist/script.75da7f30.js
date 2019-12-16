@@ -119,6 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"script.js":[function(require,module,exports) {
 var Quagga = window.Quagga;
+var code = 0;
 var App = {
   _scanner: null,
   init: function init() {
@@ -133,6 +134,15 @@ var App = {
       size: 800
     }).toPromise().then(function (result) {
       document.querySelector('input.isbn').value = result.codeResult.code;
+      code = result.codeResult.code;
+      var request = new XMLHttpRequest();
+      request.open('GET', 'https://www.batzo.net/api/v1/products?barcode=' + code + '&key=58KK4EZzJhVGp33UUTz0SDbErwXDbSJUqFO', true);
+
+      request.onload = function () {} // Begin accessing JSON data here
+      // Send request
+      ;
+
+      request.send();
     }).catch(function () {
       document.querySelector('input.isbn').value = "Not Found";
     }).then(function () {
@@ -159,7 +169,8 @@ var App = {
   }
 };
 App.init();
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+/*console.log("https://www.batzo.net/api/v1/products?barcode="+code+"&key=58KK4EZzJhVGp33UUTz0SDbErwXDbSJUqFO.name")*/
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -187,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49998" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58228" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -363,5 +374,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
