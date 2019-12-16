@@ -212,3 +212,8 @@
     display: block;
     margin: auto;
 }
+
+.link-continue-button
+{
+    text-decoration: none;
+}

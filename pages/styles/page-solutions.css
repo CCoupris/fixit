@@ -117,3 +117,10 @@ body
     display: flex;
     flex-direction: row;
 }
+
+.price-tag
+{
+  color: #b42f3c;
+  font-weight: bold;
+  font-size: 22px;
+}
