@@ -1,0 +1,126 @@
+body
+{
+  display: flex;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.container
+{
+  width: 360px;
+  margin: 0 auto;
+}
+
+.container .import-page
+{
+  justify-content: center;
+  height: 95vh;
+}
+
+.container .import-page .title
+{
+  margin-right: 63px;  
+  margin-bottom: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 33px;
+  color: #474747;
+}
+
+.container .import-page .manual-research
+{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.container .import-page .container-form
+{
+  position: relative;
+  margin: auto;
+  width: 344px;
+  height: 144px;
+  background: #F0F0F0;
+  border-radius: 15px;
+}
+
+.container .import-page .container-form .subtitle
+{
+  position: absolute;
+  color: #474747;
+  margin-top: 13px;
+  margin-left: 13px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.container .import-page .container-form .research-form
+{
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 8px 0;
+  width: 317px;
+  height: 40px;
+  background: #FFFFFF;
+  color: #D4D4D6;
+  border-radius: 15px;
+}
+
+.container .import-page .container-form .button
+{
+  position: relative;
+  margin-top: 30px;
+  padding-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 25px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background: #B42F3C;
+  top: 100px;
+  left: 130px;
+}
+
+.container .import-page .container-form .uppercase
+{
+  position: absolute;
+  color: white;
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  top: 100px;
+  left: 284px;
+}
+
+.container .import-page .other-links
+{
+  margin-top: 50px;
+  line-height: 35px;
+}
+
+.container .import-page .other-links .scan
+{
+  color: #474747;
+}
+
+.container .import-page .other-links .import
+{
+  color: #474747;
+}
