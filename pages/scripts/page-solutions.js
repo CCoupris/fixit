@@ -1,3 +1,8 @@
+const clasicButton = document.querySelector('.js-clasic')
+const premiumButton = document.querySelector('.js-premium')
+const clasicPriceButton = document.querySelector('.js-price-tag-clasic')
+const premiumPriceButton = document.querySelector('.js-price-tag-premium')
+
 // Progress bar variables
 let step = 'step1'
 
@@ -41,10 +46,18 @@ function next() {
   }
 }
 
-// Button selection
-bateryButton.addEventListener('click', () =>
+
+// Option selection
+clasicButton.addEventListener('click', () =>
 {
-    bateryButton.style.backgroundColor = "#B42F3C"
-    continueButton.style.backgroundColor = "#B42F3C"
-    bateryIcon.style.backgroundColor = "white"
+    clasicButton.style.backgroundColor = "#B42F3C"
+    clasicPriceButton.style.color = "#ffffff"
+    clasicButton.style.color = "#ffffff"
+})
+
+premiumButton.addEventListener('click', () =>
+{
+    premiumButton.style.backgroundColor = "#B42F3C"
+    premiumPriceButton.style.color = "#ffffff"
+    premiumButton.style.color = "#ffffff"
 })
