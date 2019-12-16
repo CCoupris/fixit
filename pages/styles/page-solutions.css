@@ -120,7 +120,7 @@ body
     flex-direction: row;
 }
 
-.price-tag p
+.price-tag
 {
   color: #B42F3C;
   font-weight: bold;
