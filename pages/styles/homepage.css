@@ -1,0 +1,147 @@
+body
+{
+  display: flex;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.container
+{
+  width: 310px;
+  margin: 0 auto;
+}
+
+.first-page
+{
+  justify-content: center;
+  height: 95vh;
+}
+
+.computer
+{
+  flex-flow: column wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+}
+
+.title
+{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #B42F3C;
+  margin-top: 2vh;
+}
+
+.scan
+{
+  background: #B42F3C;
+  height: 22px;
+  width: 130px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 0;
+
+}
+
+.next-page
+{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.screwdriver_anchor
+{
+  margin-top: 4vh;
+  animation: move 1.5s infinite linear;
+}
+
+@keyframes move {
+  0%{
+    transform: translate(0%,0);
+  }
+  25%{
+    transform: translate(0%,5%);
+  }
+  50%{
+    transform: translate(0%,0);
+  }
+  75%{
+    transform: translate(0%,-5%);
+  }
+  100%{
+    transform: translate(0%,0);
+  }
+}
+
+.discover
+{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #B42F3C;
+  text-decoration: none;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.page2
+{
+  padding: 27px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.red
+{
+  color: #B42F3C;
+}
+
+.use-part
+{
+  margin-top: 1vh;
+}
+
+.quote-part, .steps-part, .workers, .premium-part
+{
+  margin-top: 7vh;
+}
+
+.premium-part
+{
+  background: #F0F0F0;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.premium-part p
+{
+  width: 220px;
+  margin-top: -5px;
+}
