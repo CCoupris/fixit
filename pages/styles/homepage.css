@@ -9,11 +9,9 @@ body
 
 .container
 {
-  width: 360px;
+  width: 310px;
   margin: 0 auto;
-
 }
-
 
 .first-page
 {
@@ -53,7 +51,7 @@ body
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
+  margin-top: 4vh;
   text-align: center;
   color: white;
   font-size: 1.2em;
@@ -72,7 +70,7 @@ body
 
 .screwdriver_anchor
 {
-  margin-top: 8vh;
+  margin-top: 4vh;
   animation: move 1.5s infinite linear;
 }
 
@@ -132,11 +130,18 @@ a
 
 .quote-part, .steps-part, .workers, .premium-part
 {
-  margin-top: 8vh;
+  margin-top: 7vh;
 }
 
 .premium-part
 {
   background: #F0F0F0;
   border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.premium-part p
+{
+  width: 220px;
+  margin-top: -5px;
 }
