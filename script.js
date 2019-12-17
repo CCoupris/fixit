@@ -13,8 +13,8 @@ var App = {
     },
     decode: function(file) {
         Quagga
-            .decoder({readers: ['upc_reader']})
-            .locator({patchSize: 'medium'})
+            .decoder({readers: ['upc_reader','ean_reader']})
+            .locator({patchSize: 'large'})
             .fromSource(file, {size: 800})
             .toPromise()
             .then(function(result) {
@@ -60,7 +60,7 @@ function getAPIdata() {
             .then((data) => {
                 document.getElementById("BarcodeNumber").innerHTML = (data.products[0].barcode_number)
                 document.getElementById("ProductName").innerHTML = (data.products[0].product_name)
-            })
+                document.getElementById("Category").innerHTML = (data.products[0].category)            })
             .catch(err => { 
                 throw err 
             })
