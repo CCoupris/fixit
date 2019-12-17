@@ -1,8 +1,8 @@
-const bateryButton = document.querySelector('.js-batery-button')
+const batteryButton = document.querySelector('.js-battery-button')
 const screenButton = document.querySelector('.js-broken-screen-button')
 const connectorsButton = document.querySelector('.js-connectors-button')
 const photoButton = document.querySelector('.js-photo-button')
-const bateryIcon = document.querySelector('.js-batery-icon')
+const batteryIcon = document.querySelector('.js-battery-icon')
 const screenIcon = document.querySelector('.js-screen-icon')
 const connectorsIcon = document.querySelector('.js-connectors-icon')
 const photoIcon = document.querySelector('.js-photo-icon')
@@ -10,30 +10,65 @@ const continueButton = document.querySelector('.js-continue-button')
 
 
 // Button selection
-bateryButton.addEventListener('click', () =>
+function toggleBattery() {
+  if (batteryButton.style.backgroundColor == "white") {
+    batteryButton.style.backgroundColor = "#B42F3C";
+  } else {
+    batteryButton.style.backgroundColor = "white";
+  }
+}
+    toggleBattery()
+batteryButton.addEventListener('click', () =>
 {
-    bateryButton.style.backgroundColor = "#B42F3C"
+    toggleBattery()
     continueButton.style.backgroundColor = "#B42F3C"
-    bateryIcon.style.backgroundColor = "white"
+    batteryIcon.style.backgroundColor = "white"
 })
 
+    //
+function toggleScreen() {
+  if (screenButton.style.backgroundColor == "white") {
+    screenButton.style.backgroundColor = "#B42F3C";
+  } else {
+    screenButton.style.backgroundColor = "white";
+  }
+}
+    toggleScreen()
 screenButton.addEventListener('click', () =>
 {
-    screenButton.style.backgroundColor = "#B42F3C"
+    toggleScreen()
     continueButton.style.backgroundColor = "#B42F3C"
     screenIcon.style.backgroundColor = "white"
 })
 
+    //
+function toggleConnectors() {
+  if (connectorsButton.style.backgroundColor == "white") {
+    connectorsButton.style.backgroundColor = "#B42F3C";
+  } else {
+    connectorsButton.style.backgroundColor = "white";
+  }
+}
+    toggleConnectors()
 connectorsButton.addEventListener('click', () =>
 {
-    connectorsButton.style.backgroundColor = "#B42F3C"
+    toggleConnectors()
     continueButton.style.backgroundColor = "#B42F3C"
     connectorsIcon.style.backgroundColor = "white"
 })
 
+    //
+function togglePhoto() {
+  if (photoButton.style.backgroundColor == "white") {
+    photoButton.style.backgroundColor = "#B42F3C";
+  } else {
+    photoButton.style.backgroundColor = "white";
+  }
+}
+    togglePhoto()
 photoButton.addEventListener('click', () =>
 {
-    photoButton.style.backgroundColor = "#B42F3C"
+    togglePhoto()
     continueButton.style.backgroundColor = "#B42F3C"
     photoIcon.style.backgroundColor = "white"
 })
