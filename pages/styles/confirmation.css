@@ -67,13 +67,12 @@ h4
 
 
 .faqItem .answer{
-  /*display: none;*/
+  display: none;
 }
 
-/*.faqItem.is-open .answer{
+.faqItem.is-open .answer{
+  list-style: none;
   display: flex;
-	justify-content: center;
-  flex-direction: row;
-	width: 100%;
-	padding : 0px;
-}*/
+  flex-flow: row wrap;
+  justify-content: center;
+}
