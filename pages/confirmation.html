@@ -18,6 +18,10 @@
         <li class="faqItem is-open">
           <h4>Vos coordonnées</h4>
           <div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<form method="post" action="inscription.php">
+
+						</form>
             <button class="button-valid">Valider</button>
           </div>
         </li>
@@ -26,7 +30,7 @@
           <div class="answer">
             <p class="recap">Voici le récapitulatif de votre commande</p>
 						<p class="bold">Réparation</p>
-						<p>Réparation (à modifier en JS)</p>
+						<p>Réparation (à modifier en JS)</p><br/>
 						<p class="bold">Forfait</p>
 						<p>Forfait (à modifier en JS)</p>
 						<p class="bold">Prix</p>
@@ -41,7 +45,27 @@
         <li class="faqItem">
           <h4>Paiement</h4>
           <div class="answer">
-            <p>Apple Music</p>
+						<div class="card">
+
+							<img src="../images/visa.svg" alt="visa" class="visa">
+							<p>Visa</p>
+						</div>
+						<div>
+							<img src="../images/cb.svg" alt="CB" class="CB">
+							<p>CB</p>
+						</div>
+						<div>
+							<img src="../images/mastercard.svg" alt="mastercard" class="mastercard">
+							<p>Mastercard</p>
+						</div>
+						<div>
+							<img src="../images/maestro.svg" alt="maestro" class="maestro">
+							<p>Maestro</p>
+						</div>
+						<div>
+							<img src="../images/paypal.svg" alt="paypal" class="paypal">
+							<p>Paypal</p>
+						</div>
 						<button class="button-valid">Valider</button>
           </div>
         </li>
@@ -49,11 +73,14 @@
           <h4>Contact</h4>
           <div class="answer">
             <p>Nous avons votre email, mais pour garder contact de manière plus efficace, rejoignez nous sur Messenger !</p>
-						<p>Se connecter</p>
-						<p>Je ne souhaite pas utiliser Messenger</p>
-				  </div>
+						<div class="button-center">
+							<button class="button-connect-ship">Se connecter</button>
+							<a href="#" class="no-messenger">Je ne souhaite pas utiliser Messenger</a>
+						</div>
+					</div>
         </li>
       </ul>
+			<button class="button-connect-ship">Suivre ma commande</button>
 		</div>
 		<script type="text/javascript" src="scripts/confirmation.js"></script>
 	</body>
