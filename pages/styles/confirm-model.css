@@ -14,7 +14,7 @@ body
 }
 .container .scan-verif .icon-style
 {
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .container .scan-verif .confirmation-item
@@ -34,7 +34,7 @@ body
 
 .container .scan-verif .continue-button
 {
-  margin-top: 70px;
+  margin-top: 60px;
   padding-top: 7px;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +59,7 @@ body
 
 .container .scan-verif .case-error
 {
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 50px;
   font-family: "Nunito";
   font-style: normal;
