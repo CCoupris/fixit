@@ -6,8 +6,8 @@ Fix It is a school project, we decided to create a website to avoid wasting, do 
 
 ## Team
 
-* Andy
-* Catinca
-* Charlotte
-* Cloé
-* Edouard
+* [Andy Chea](https://github.com/sassanTMAX)
+* [Catinca Gheorhui](https://github.com/CatincaG)
+* [Charlotte Blassel](https://github.com/charlotteblassel')
+* [Cloé Coupris](https://github.com/CCoupris)
+* [Edouard Eisenfisz](https://github.com/Azenstrange)
