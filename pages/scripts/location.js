@@ -3,15 +3,32 @@ const workButton = document.querySelector('.js-button-work')
 const continueButton = document.querySelector('.js-continue-button')
 
 // Location selection
+function toggleHome() {
+  if (homeButton.style.backgroundColor == "white") {
+    homeButton.style.backgroundColor = "#B42F3C";
+  } else {
+    homeButton.style.backgroundColor = "white";
+  }
+}
+    toggleHome()
 homeButton.addEventListener('click', () =>
 {
-    homeButton.style.backgroundColor = "#B42F3C"
+    toggleHome()
     continueButton.style.backgroundColor = "#B42F3C"
 })
 
+    //
+function toggleWork() {
+  if (workButton.style.backgroundColor == "white") {
+    workButton.style.backgroundColor = "#B42F3C";
+  } else {
+    workButton.style.backgroundColor = "white";
+  }
+}
+    toggleWork()
 workButton.addEventListener('click', () =>
 {
-    workButton.style.backgroundColor = "#B42F3C"
+    toggleWork()
     continueButton.style.backgroundColor = "#B42F3C"
 })
 
