@@ -3,7 +3,24 @@ const premiumButton = document.querySelector('.js-premium')
 const clasicPriceButton = document.querySelector('.js-price-tag-clasic')
 const premiumPriceButton = document.querySelector('.js-price-tag-premium')
 
-// Progress bar variables
+
+// Option selection
+clasicButton.addEventListener('click', () =>
+{
+    clasicButton.style.backgroundColor = "#B42F3C"
+    clasicPriceButton.style.color = "#ffffff"
+    clasicButton.style.color = "#ffffff"
+})
+
+premiumButton.addEventListener('click', () =>
+{
+    premiumButton.style.backgroundColor = "#B42F3C"
+    premiumPriceButton.style.color = "#ffffff"
+    premiumButton.style.color = "#ffffff"
+})
+
+
+/*// Progress bar variables
 let step = 'step1'
 
 const step1 = document.getElementById('step1')
@@ -44,20 +61,4 @@ function next() {
     step1.classList.remove("is-complete");
     step1.classList.add("is-active");
   }
-}
-
-
-// Option selection
-clasicButton.addEventListener('click', () =>
-{
-    clasicButton.style.backgroundColor = "#B42F3C"
-    clasicPriceButton.style.color = "#ffffff"
-    clasicButton.style.color = "#ffffff"
-})
-
-premiumButton.addEventListener('click', () =>
-{
-    premiumButton.style.backgroundColor = "#B42F3C"
-    premiumPriceButton.style.color = "#ffffff"
-    premiumButton.style.color = "#ffffff"
-})
+}*/

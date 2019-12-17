@@ -12,6 +12,12 @@ body
   margin: 0 auto;
 }
 
+.link-option-choosed
+{
+  text-decoration: none;
+  color: black;
+}
+
     /* Progress step bar */
 .progress {
     position: relative;

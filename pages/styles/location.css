@@ -14,6 +14,11 @@ body
   margin: 0 auto;
 }
 
+.link-location
+{
+  text-decoration: none;
+}
+
 /* Progress step bar */
 .progress 
 {
@@ -196,16 +201,14 @@ body
 .container .continue-button
 {
   margin-top: 40px;
-  padding-top: 7px;
   margin-left: auto;
   margin-right: auto;
   width: 154px;
-  height: 40px;
   font-weight: bold;
   align-items: center;
   text-align: center;
   border-radius: 5px;
-  background: #B42F3C;
+  background: #ce7982;
 }
 
 .container .continue-button .uppercase

@@ -8,7 +8,38 @@ const connectorsIcon = document.querySelector('.js-connectors-icon')
 const photoIcon = document.querySelector('.js-photo-icon')
 const continueButton = document.querySelector('.js-continue-button')
 
-// Progress bar variables
+
+// Button selection
+bateryButton.addEventListener('click', () =>
+{
+    bateryButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+    bateryIcon.style.backgroundColor = "white"
+})
+
+screenButton.addEventListener('click', () =>
+{
+    screenButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+    screenIcon.style.backgroundColor = "white"
+})
+
+connectorsButton.addEventListener('click', () =>
+{
+    connectorsButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+    connectorsIcon.style.backgroundColor = "white"
+})
+
+photoButton.addEventListener('click', () =>
+{
+    photoButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+    photoIcon.style.backgroundColor = "white"
+})
+
+
+/*// Progress bar variables
 let step = 'step1'
 
 const step1 = document.getElementById('step1')
@@ -51,36 +82,7 @@ function next() {
   }
 }
 
-// Button selection
-bateryButton.addEventListener('click', () =>
-{
-    bateryButton.style.backgroundColor = "#B42F3C"
-    continueButton.style.backgroundColor = "#B42F3C"
-    bateryIcon.style.backgroundColor = "white"
-})
-
-screenButton.addEventListener('click', () =>
-{
-    screenButton.style.backgroundColor = "#B42F3C"
-    continueButton.style.backgroundColor = "#B42F3C"
-    screenIcon.style.backgroundColor = "white"
-})
-
-connectorsButton.addEventListener('click', () =>
-{
-    connectorsButton.style.backgroundColor = "#B42F3C"
-    continueButton.style.backgroundColor = "#B42F3C"
-    connectorsIcon.style.backgroundColor = "white"
-})
-
-photoButton.addEventListener('click', () =>
-{
-    photoButton.style.backgroundColor = "#B42F3C"
-    continueButton.style.backgroundColor = "#B42F3C"
-    photoIcon.style.backgroundColor = "white"
-})
-
 continueButton.addEventListener('click', () =>
 {
   next()
-})
+})*/

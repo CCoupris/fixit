@@ -1,4 +1,22 @@
-// Progress bar variables
+const homeButton = document.querySelector('.js-button-home')
+const workButton = document.querySelector('.js-button-work')
+const continueButton = document.querySelector('.js-continue-button')
+
+// Location selection
+homeButton.addEventListener('click', () =>
+{
+    homeButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+})
+
+workButton.addEventListener('click', () =>
+{
+    workButton.style.backgroundColor = "#B42F3C"
+    continueButton.style.backgroundColor = "#B42F3C"
+})
+
+
+/*// Progress bar variables
 let step = 'step1'
 
 const step1 = document.getElementById('step1')
@@ -39,4 +57,4 @@ function next() {
     step1.classList.remove("is-complete");
     step1.classList.add("is-active");
   }
-}
+}*/
