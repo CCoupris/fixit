@@ -1,0 +1,27 @@
+[
+    {
+        "name": "IphoneX",
+        "prob": "batterie",
+        "premium":"104.99€",
+        "normal":"69.99€"
+    },
+    {
+        "name": "IphoneX",
+        "prob": "écran brisé",
+        "premium":"264.99€",
+        "normal":"229.99€"
+    },
+    {
+        "name": "IphoneX",
+        "prob": "connectiques",
+        "premium":"59.99€",
+        "normal":"94.99€"
+    },
+    {
+        "name": "IphoneX",
+        "prob": "appareil photo",
+        "premium":"184.99€",
+        "normal":"149.99€"
+    }
+]
+  

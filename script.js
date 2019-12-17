@@ -13,7 +13,7 @@ var App = {
     },
     decode: function(file) {
         Quagga
-            .decoder({readers: ['ean_reader']})
+            .decoder({readers: ['upc_reader']})
             .locator({patchSize: 'medium'})
             .fromSource(file, {size: 800})
             .toPromise()
