@@ -40,7 +40,16 @@ h4
 
 .button-valid
 {
-
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #B42F3C;
+  border-radius: 5px;
+  padding-left: 17px;
+  width: 90px;
 }
 
 /*FAQ*/
@@ -67,7 +76,7 @@ h4
 
 
 .faqItem .answer{
-  /*display: none;*/
+/*  display: none;*/
 }
 
 /*.faqItem.is-open .answer{
