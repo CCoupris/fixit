@@ -86,9 +86,16 @@ clasicButton.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','classic')
   sessionStorage.setItem('price',classic.innerHTML)
-  clasicButton.style.backgroundColor = "#B42F3C"
-  clasicPriceButton.style.color = "#ffffff"
-  clasicButton.style.color = "#ffffff"
+  if(clasicButton.style.backgroundColor == "white"){
+    clasicButton.style.backgroundColor = "#B42F3C"
+    clasicButton.style.color = "#ffffff"
+    clasicPriceButton.style.color = "#ffffff"
+    }
+    else{
+      clasicButton.style.backgroundColor = "white"
+      clasicButton.style.color = "black"
+      clasicPriceButton.style.color = "black"
+    }
   continueButton.style.backgroundColor = "#B42F3C"
 })
 
@@ -96,9 +103,16 @@ premiumButton.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','premium')
   sessionStorage.setItem('price',premium.innerHTML)
-  premiumButton.style.backgroundColor = "#B42F3C"
-  premiumPriceButton.style.color = "#ffffff"
-  premiumButton.style.color = "#ffffff"
+  if(premiumButton.style.backgroundColor == "white"){
+    premiumButton.style.backgroundColor = "#B42F3C"
+    premiumButton.style.color = "#ffffff"
+    premiumPriceButton.style.color = "#ffffff"
+    }
+    else{
+      premiumButton.style.backgroundColor = "white"
+      premiumButton.style.color = "black"
+      premiumPriceButton.style.color = "black"
+    }
   continueButton.style.backgroundColor = "#B42F3C"
 })
 // Option selection laptop
@@ -106,9 +120,16 @@ clasicButtonlaptop.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','classic')
   sessionStorage.setItem('price',classiclaptop.innerHTML)
-  clasicButtonlaptop.style.backgroundColor = "#B42F3C"
-  clasicPriceButtonlaptop.style.color = "#ffffff"
-  clasicButtonlaptop.style.color = "#ffffff"
+  if(clasicButtonlaptop.style.backgroundColor == "white"){
+    clasicButtonlaptop.style.backgroundColor = "#B42F3C"
+    clasicButtonlaptop.style.color = "#ffffff"
+    clasicPriceButtonlaptop.style.color = "#ffffff"
+    }
+    else{
+      clasicButtonlaptop.style.backgroundColor = "white"
+      clasicButtonlaptop.style.color = "black"
+      clasicPriceButtonlaptop.style.color = "black"
+    }
   continueButtonlaptop.style.backgroundColor = "#B42F3C"
 
 })
@@ -117,9 +138,17 @@ premiumButtonlaptop.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','premium')
   sessionStorage.setItem('price',premiumlaptop.innerHTML)
+  if(premiumButtonlaptop.style.backgroundColor == "white"){
   premiumButtonlaptop.style.backgroundColor = "#B42F3C"
-  premiumPriceButtonlaptop.style.color = "#ffffff"
   premiumButtonlaptop.style.color = "#ffffff"
+  premiumPriceButtonlaptop.style.color = "#ffffff"
+  }
+  else{
+    premiumButtonlaptop.style.backgroundColor = "white"
+    premiumButtonlaptop.style.color = "black"
+    premiumPriceButtonlaptop.style.color = "black"
+  }
+ 
   continueButtonlaptop.style.backgroundColor = "#B42F3C"
 
 })

@@ -83,11 +83,9 @@ h4
   flex-flow: row wrap;
 }
 
-.faqItem .answer{
-  display: none;
-}
 
-.faqItem.is-open .answer{
+
+.faqItem .answer{
   list-style: none;
   display: flex;
   flex-flow: row wrap;

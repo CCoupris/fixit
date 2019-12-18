@@ -55,3 +55,23 @@ validateButton.addEventListener("click", () =>
 {
   cardHolder.classList.toggle('card-holder-display')
 })
+
+const name = sessionStorage.getItem('phonetype')
+const phoneprob = sessionStorage.getItem('phoneproblem')
+const pricetype = sessionStorage.getItem('pricetype')
+const price = sessionStorage.getItem('price')
+const where = sessionStorage.getItem('where')
+const address = sessionStorage.getItem('adresse')
+const hours = sessionStorage.getItem('hours')
+const day = sessionStorage.getItem('day')
+const jsreparation = document.querySelector('.js-reparation')
+const jspremium = document.querySelector('.js-premium')
+const jsprice = document.querySelector('.js-price')
+const jsday = document.querySelector('.js-day')
+const jsaddress = document.querySelector('.js-address')
+jsreparation.innerHTML= "appareil "+name+" pour un problème sur "+phoneprob
+jspremium.innerHTML= pricetype
+jsreparation.innerHTML = price 
+jsday.innerHTML = "Rendez-vous le "+day+" à "+hours
+jsaddress.innerHTML = where +" au " + address
+jsprice.innerHTML = price
