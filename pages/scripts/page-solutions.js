@@ -17,6 +17,9 @@ const classiclaptop = document.querySelector('.js-price-tag-clasic-laptop')
 const objecttype = sessionStorage.getItem('devisetype')
 const path_one = document.querySelector('.pathone')
 const path_two = document.querySelector('.pathtwo')
+
+const continueButton = document.querySelector('.js-continue-button')
+const continueButtonlaptop = document.querySelector('.js-continue-button-laptop')
 switch (objecttype) {
   case 'Electronics > Computers > Desktop Computers':
     path_one.classList.toggle('invisible')
@@ -86,6 +89,7 @@ clasicButton.addEventListener('click', () =>
   clasicButton.style.backgroundColor = "#B42F3C"
   clasicPriceButton.style.color = "#ffffff"
   clasicButton.style.color = "#ffffff"
+  continueButton.style.backgroundColor = "#B42F3C"
 })
 
 premiumButton.addEventListener('click', () =>
@@ -95,6 +99,7 @@ premiumButton.addEventListener('click', () =>
   premiumButton.style.backgroundColor = "#B42F3C"
   premiumPriceButton.style.color = "#ffffff"
   premiumButton.style.color = "#ffffff"
+  continueButton.style.backgroundColor = "#B42F3C"
 })
 // Option selection laptop
 clasicButtonlaptop.addEventListener('click', () =>
@@ -104,6 +109,7 @@ clasicButtonlaptop.addEventListener('click', () =>
   clasicButtonlaptop.style.backgroundColor = "#B42F3C"
   clasicPriceButtonlaptop.style.color = "#ffffff"
   clasicButtonlaptop.style.color = "#ffffff"
+  continueButtonlaptop.style.backgroundColor = "#B42F3C"
 
 })
 
@@ -114,6 +120,7 @@ premiumButtonlaptop.addEventListener('click', () =>
   premiumButtonlaptop.style.backgroundColor = "#B42F3C"
   premiumPriceButtonlaptop.style.color = "#ffffff"
   premiumButtonlaptop.style.color = "#ffffff"
+  continueButtonlaptop.style.backgroundColor = "#B42F3C"
 
 })
 

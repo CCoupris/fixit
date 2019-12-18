@@ -17,7 +17,7 @@ const batteryIconlaptop = document.querySelector('.js-battery-icon-laptop')
 const screenIconlaptop = document.querySelector('.js-screen-icon-laptop')
 const connectorsIconlaptop = document.querySelector('.js-connectors-icon-laptop')
 const photoIconlaptop = document.querySelector('.js-photo-icon-laptop')
-const continueButtonlaptop = document.querySelector('.link-continue-button-laptop')
+const continueButtonlaptop = document.querySelector('.js-continue-button-laptop')
 //information session
 const name = sessionStorage.getItem('phonetype')
 const objectName = document.querySelector('.phone')
