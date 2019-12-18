@@ -59,7 +59,8 @@ function getAPIdata() {
                 //document.getElementById("ProductName").innerHTML = (data.products[0].product_name)
                 //document.getElementById("Category").innerHTML = (data.products[0].category) 
                 nextpart()
-                document.querySelector('.item-model') .innerHTML = (data.products[0].product_name)          
+                document.querySelector('.item-model') .innerHTML = (data.products[0].product_name)
+                localStorage.setItem('type',(data.products[0].product_name))          
             })
             .catch(err => { 
                 throw err 
