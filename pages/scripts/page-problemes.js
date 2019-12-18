@@ -1,3 +1,4 @@
+//phone
 const batteryButton = document.querySelector('.js-battery-button')
 const screenButton = document.querySelector('.js-broken-screen-button')
 const connectorsButton = document.querySelector('.js-connectors-button')
@@ -7,10 +8,37 @@ const screenIcon = document.querySelector('.js-screen-icon')
 const connectorsIcon = document.querySelector('.js-connectors-icon')
 const photoIcon = document.querySelector('.js-photo-icon')
 const continueButton = document.querySelector('.js-continue-button')
+//laptop
+const batteryButtonlaptop = document.querySelector('.js-battery-button-laptop')
+const screenButtonlaptop = document.querySelector('.js-broken-screen-button-laptop')
+const connectorsButtonlaptop = document.querySelector('.js-connectors-button-laptop')
+const photoButtonlaptop = document.querySelector('.js-photo-button-laptop')
+const batteryIconlaptop = document.querySelector('.js-battery-icon-laptop')
+const screenIconlaptop = document.querySelector('.js-screen-icon-laptop')
+const connectorsIconlaptop = document.querySelector('.js-connectors-icon-laptop')
+const photoIconlaptop = document.querySelector('.js-photo-icon-laptop')
+const continueButtonlaptop = document.querySelector('.js-continue-button-laptop')
+//information session
 const name = sessionStorage.getItem('phonetype')
-const objectName = document.querySelector('.object-name')
+const objectName = document.querySelector('.phone')
 objectName.innerHTML = name
-
+const objectNamelaptop = document.querySelector('.laptop')
+objectNamelaptop.innerHTML = name
+const objecttype = sessionStorage.getItem('devisetype')
+console.log(objecttype)
+const path_one = document.querySelector('.path1')
+const path_two = document.querySelector('.path2')
+switch (objecttype) {
+  case 'Electronics > Computers > Desktop Computers':
+    path_one.classList.toggle('invisible')
+    break;
+  case 'Electronics > Communications > Telephony > Mobile Phones':
+    path_two.classList.toggle('invisible')
+    break;
+  default:
+    path_two.classList.toggle('invisible')
+    break
+}
 // Button selection
 function toggleBattery() {
   if (batteryButton.style.backgroundColor == "white") {
@@ -80,7 +108,76 @@ photoButton.addEventListener('click', () =>
     photoIcon.style.backgroundColor = "white"
 })
 
+//laptop
 
+// Button selection
+function toggleBatterylaptop() {
+  if (batteryButtonlaptop.style.backgroundColor == "white") {
+    batteryButtonlaptop.style.backgroundColor = "#B42F3C";
+  } else {
+    batteryButtonlaptop.style.backgroundColor = "white";
+  }
+  
+}
+    toggleBatterylaptop()
+batteryButtonlaptop.addEventListener('click', () =>
+{
+    sessionStorage.setItem('phoneproblem','La batterie')
+    toggleBatterylaptop()
+    continueButtonlaptop.style.backgroundColor = "#B42F3C"
+    batteryIconlaptop.style.backgroundColor = "white"
+})
+
+    //
+function toggleScreenlaptop() {
+  if (screenButtonlaptop.style.backgroundColor == "white") {
+    screenButtonlaptop.style.backgroundColor = "#B42F3C";
+  } else {
+    screenButtonlaptop.style.backgroundColor = "white";
+  }
+}
+    toggleScreenlaptop()
+screenButtonlaptop.addEventListener('click', () =>
+{
+  sessionStorage.setItem('phoneproblem','L\'écran')
+    toggleScreenlaptop()
+    continueButtonlaptop.style.backgroundColor = "#B42F3C"
+    screenIconlaptop.style.backgroundColor = "white"
+})
+
+    //
+function toggleConnectorslaptop() {
+  if (connectorsButtonlaptop.style.backgroundColor == "white") {
+    connectorsButtonlaptop.style.backgroundColor = "#B42F3C";
+  } else {
+    connectorsButtonlaptop.style.backgroundColor = "white";
+  }
+}
+    toggleConnectorslaptop()
+connectorsButtonlaptop.addEventListener('click', () =>
+{
+    sessionStorage.setItem('phoneproblem','Les connecteurs')
+    toggleConnectorslaptop()
+    continueButtonlaptop.style.backgroundColor = "#B42F3C"
+    connectorsIconlaptop.style.backgroundColor = "white"
+})
+
+    //
+function togglePhotolaptop() {
+  if (photoButtonlaptop.style.backgroundColor == "white") {
+    photoButtonlaptop.style.backgroundColor = "#B42F3C";
+  } else {
+    photoButtonlaptop.style.backgroundColor = "white";
+  }
+}
+    togglePhotolaptop()
+photoButtonlaptop.addEventListener('click', () =>
+{
+  sessionStorage.setItem('phoneproblem','L\'appareil photo')
+    togglePhotolaptop()
+    continueButtonlaptop.style.backgroundColor = "#B42F3C"
+    photoIconlaptop.style.backgroundColor = "white"
+})
 /*// Progress bar variables
 let step = 'step1'
 

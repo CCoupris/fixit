@@ -219,3 +219,6 @@
 {
     text-decoration: none;
 }
+.invisible{
+    display: none;
+}

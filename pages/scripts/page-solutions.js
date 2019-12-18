@@ -24,6 +24,7 @@ switch(phoneproblem){
     break;
     default:
       console.log('Sorry, you need to go to the previous page to make your test')
+      break
 }
 
 // Option selection

@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="../images/logo.png">
 </head>
 <body>
-    <div class="container">
+    <div class="container path1">
         <div class="progress">
             <div class="progress-track"></div>
             <div id="step1" class="progress-step is-complete">1</div>
@@ -24,7 +24,7 @@
                 <path d="M23.6321 77.3815C24.5507 77.3815 25.2954 76.6368 25.2954 75.7182C25.2954 74.7996 24.5507 74.0549 23.6321 74.0549C22.7135 74.0549 21.9688 74.7996 21.9688 75.7182C21.9688 76.6368 22.7135 77.3815 23.6321 77.3815Z" fill="#474747"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.874 85H41.4958C44.6758 85 47.2636 82.4142 47.2636 79.236V5.76958C47.2636 2.58971 44.6758 0 41.4958 0H5.76783C2.58796 0 0 2.58971 0 5.76958V79.2339C0 82.414 2.58602 84.9979 5.76783 84.9979H5.94927L5.90799 84.9268H39.8787L39.874 85ZM2.25561 79.2339C2.25561 81.1702 3.83351 82.7444 5.76783 82.7444H41.4958C43.434 82.7444 45.008 81.1702 45.008 79.2339V5.76958C45.008 3.83332 43.4338 2.25542 41.4958 2.25542H5.76783C3.83351 2.25542 2.25561 3.83332 2.25561 5.76958V79.2339Z" fill="#474747"/>
                 </svg>
-            <p class="object-name"></p>
+            <p class="object-name phone"></p>
         </div>
         <div class="problem-choices">
             <p>Quel est votre problème ?</p>
@@ -48,6 +48,44 @@
                 </div>
             </div>
             <a href="../pages/page-solutions.html" class="link-continue-button"><button class="js-continue-button continue-button">CONTINUER</button></a>
+        </div>
+    </div>
+    <div class="container path2">
+        <div class="progress">
+            <div class="progress-track"></div>
+            <div id="step1" class="progress-step is-complete">1</div>
+            <div id="step2" class="progress-step is-active">2</div>
+            <div id="step3" class="progress-step">3</div>
+            <div id="step4" class="progress-step">4</div>
+        </div>
+        <div class="object-founded">
+            <svg width="70" height="45" viewBox="0 0 70 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.68859 40.6472H63.3114C64.4829 40.6472 65.4348 39.6948 65.4348 38.5239V2.12336C65.4348 0.95248 64.4829 0 63.3114 0H6.68859C5.51771 0 4.56523 0.95248 4.56523 2.12336V38.5239C4.56523 39.6948 5.51832 40.6472 6.68859 40.6472ZM6.38526 2.12336C6.38526 1.95592 6.52115 1.82003 6.68859 1.82003H63.3114C63.4788 1.82003 63.6147 1.95592 63.6147 2.12336V38.5239C63.6147 38.6913 63.4788 38.8272 63.3114 38.8272H6.68859C6.52115 38.8272 6.38526 38.6913 6.38526 38.5239V2.12336ZM70 42.2719V43.9712C70 44.4214 69.6348 44.7866 69.1846 44.7866H0.815371C0.365218 44.7866 0 44.4214 0 43.9712V42.2719H28.7485C28.8905 42.7457 29.3249 43.0933 29.8448 43.0933H40.1558C40.6751 43.0933 41.1095 42.7463 41.2521 42.2719H70Z" fill="#474747"/>
+            </svg>                
+            <p class="object-name laptop"></p>
+        </div>
+        <div class="problem-choices">
+            <p>Quel est votre problème ?</p>
+            <div class="four-choices">
+                <div class="first-row">
+                    <button class="js-battery-button-laptop battery-button">
+                        <img class="js-battery-icon-laptop" src="../images/page-problemes/icon-pc-broken.svg" alt="Batery problem"/>
+                    </button>
+                    <button class="js-broken-screen-button-laptop broken-screen-button">
+                        <img class="js-screen-icon-laptop" src="../images/page-problemes/icon-battery.svg" alt="Screen problem"/>
+                    </button>
+                </div>
+                <div class="second-row">
+                    <button class="js-connectors-button-laptop connectors-button">
+                        <img class="js-connectors-icon-laptop" src="../images/page-problemes/icon-plug.svg" alt="Connector problem"/>
+                    </button>
+                    <button class="js-photo-button-laptop photo-button">
+                        <img class="js-photo-button-laptop" src="../images/page-problemes/icon-keyboard.svg" alt="Camera problem" style="
+                        width: 51px;"/>
+                    </button>
+                </div>
+            </div>
+            <a href="../pages/laptop-page-solutions.html" class="link-continue-button"><button class="js-continue-button continue-button">CONTINUER</button></a>
         </div>
     </div>
       <script src="scripts/page-problemes.js"></script>
