@@ -54,6 +54,12 @@ h4
   width: 100px;
   text-align: center;
   margin: 10px 0 10px 150px;
+  cursor: pointer;
+  outline: none;
+}
+.js-button-valid
+{
+  background: #ce7982;
 }
 
 /*FAQ*/
@@ -99,6 +105,8 @@ h4
   background: #B42F3C;
   border-radius: 5px;
   padding: 5px 15px;
+  cursor: pointer;
+  outline: none;
 }
 
 .follow
@@ -150,7 +158,26 @@ h4
 
 .card-information
 {
-  margin: 0px 10px;
+  margin: 0px 2px 8px 2px;
+  padding: 10px 8px 0 8px;
+  background: white;
+  border-radius: 5px;
+}
+
+.card-name
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-holder
+{
+  display: none;
+}
+
+.card-holder-display
+{
+  display: block;
 }
 
 label{
