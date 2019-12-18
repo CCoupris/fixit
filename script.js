@@ -51,7 +51,7 @@ const secondpart = document.querySelector('.confirmation')
 const continuebutton = document.querySelector('.path')
 function getAPIdata() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/" // Use a proxy to avoid CORS error
-    const api_key = "dak11o3uirjgcd561m0751e5l0y7bl"
+    const api_key = "eqa1m93hzh2ga1j7lcvzjkw1m6u3vg"
     const url = proxyurl + "https://api.barcodelookup.com/v2/products?barcode="+code+"&formatted=y&key=" + api_key
     fetch(url)
             .then(response => response.json())

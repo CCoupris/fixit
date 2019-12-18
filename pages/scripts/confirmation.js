@@ -1,4 +1,4 @@
-class Open {
+/*class Open {
   construction(){
   }
   open(i,list){
@@ -27,7 +27,7 @@ for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function() {
     faq.open(i,list)
   })
-}
+}*/
 
 
 // CARD FORM 
