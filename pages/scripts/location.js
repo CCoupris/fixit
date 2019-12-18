@@ -1,6 +1,7 @@
 const homeButton = document.querySelector('.js-button-home')
 const workButton = document.querySelector('.js-button-work')
 const continueButton = document.querySelector('.js-continue-button')
+const test = sessionStorage.getItem('price')
 
 // Location selection
 function toggleHome() {

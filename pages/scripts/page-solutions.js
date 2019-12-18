@@ -5,8 +5,17 @@ const premiumPriceButton = document.querySelector('.js-price-tag-premium')
 const phoneproblem = sessionStorage.getItem('phoneproblem')
 const premium = document.querySelector('.js-price-tag-premium')
 const classic = document.querySelector('.js-price-tag-clasic')
-const path_one = document.querySelector('.path1')
-const path_two = document.querySelector('.path2')
+
+const clasicButtonlaptop = document.querySelector('.js-clasic-laptop')
+const premiumButtonlaptop = document.querySelector('.js-premium-laptop')
+const clasicPriceButtonlaptop = document.querySelector('.js-price-tag-clasic-laptop')
+const premiumPriceButtonlaptop = document.querySelector('.js-price-tag-premium-laptop')
+const premiumlaptop = document.querySelector('.js-price-tag-premium-laptop')
+const classiclaptop = document.querySelector('.js-price-tag-clasic-laptop')
+
+const objecttype = sessionStorage.getItem('devisetype')
+const path_one = document.querySelector('.pathone')
+const path_two = document.querySelector('.pathtwo')
 switch (objecttype) {
   case 'Electronics > Computers > Desktop Computers':
     path_one.classList.toggle('invisible')
@@ -46,20 +55,20 @@ else
 {
   switch(phoneproblem){
     case 'L\'écran':
-      classic.innerHTML='80,60€'
-      premium.innerHTML='140.99€'
+      classiclaptop.innerHTML='80,60€'
+      premiumlaptop.innerHTML='140.99€'
       break;
     case 'La batterie':
-      classic.innerHTML='80.99€'
-      premium.innerHTML='120.99€'
+      classiclaptop.innerHTML='80.99€'
+      premiumlaptop.innerHTML='120.99€'
       break;
     case 'Les connecteurs':
-      classic.innerHTML='59.99€'
-      premium.innerHTML='104.99€'
+      classiclaptop.innerHTML='59.99€'
+      premiumlaptop.innerHTML='104.99€'
       break;
     case 'Le clavier':
-      classic.innerHTML='90.99€'
-      premium.innerHTML='120.99€'
+      classiclaptop.innerHTML='90.99€'
+      premiumlaptop.innerHTML='120.99€'
       break;
       default:
         console.log('Sorry, you need to go to the previous page to make your test')
@@ -71,20 +80,40 @@ else
 // Option selection
 clasicButton.addEventListener('click', () =>
 {
-    clasicButton.style.backgroundColor = "#B42F3C"
-    clasicPriceButton.style.color = "#ffffff"
-    clasicButton.style.color = "#ffffff"
-    sessionStorage.setItem('pricetype','classic')
-    sessionStorage.setItem('price',classic.innerHTML)
+  sessionStorage.setItem('pricetype','classic')
+  sessionStorage.setItem('price',classic.innerHTML)
+  clasicButton.style.backgroundColor = "#B42F3C"
+  clasicPriceButton.style.color = "#ffffff"
+  clasicButton.style.color = "#ffffff"
 })
 
 premiumButton.addEventListener('click', () =>
 {
-    premiumButton.style.backgroundColor = "#B42F3C"
-    premiumPriceButton.style.color = "#ffffff"
-    premiumButton.style.color = "#ffffff"
-    sessionStorage.setItem('pricetype','Premium')
-    sessionStorage.setItem('price',premium.innerHTML)
+  sessionStorage.setItem('pricetype','premium')
+  sessionStorage.setItem('price',premium.innerHTML)
+  premiumButton.style.backgroundColor = "#B42F3C"
+  premiumPriceButton.style.color = "#ffffff"
+  premiumButton.style.color = "#ffffff"
+})
+// Option selection laptop
+clasicButtonlaptop.addEventListener('click', () =>
+{
+  sessionStorage.setItem('pricetype','classic')
+  sessionStorage.setItem('price',classic.innerHTML)
+  clasicButtonlaptop.style.backgroundColor = "#B42F3C"
+  clasicPriceButtonlaptop.style.color = "#ffffff"
+  clasicButtonlaptop.style.color = "#ffffff"
+
+})
+
+premiumButtonlaptop.addEventListener('click', () =>
+{
+  sessionStorage.setItem('pricetype','premium')
+  sessionStorage.setItem('price',premium.innerHTML)
+  premiumButtonlaptop.style.backgroundColor = "#B42F3C"
+  premiumPriceButtonlaptop.style.color = "#ffffff"
+  premiumButtonlaptop.style.color = "#ffffff"
+
 })
 
 
