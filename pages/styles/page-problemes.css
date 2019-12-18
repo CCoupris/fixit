@@ -127,7 +127,7 @@
   text-align: center;
 }
 
-.problem-choices p
+.problem-question
 {
     /* Quel est votre problème ? */
     width: 283px;
@@ -221,4 +221,13 @@
 }
 .invisible{
     display: none;
+}
+
+
+/* LAPTOP */
+.problem-button-text
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
 }
