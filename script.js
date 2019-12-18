@@ -1,7 +1,3 @@
-const page = document.querySelector(".run_page")
-page.setAttribute("href","pages/page-problemes.html")
-
-
 
 
 var Quagga = window.Quagga;
@@ -18,12 +14,12 @@ var App = {
             .fromSource(file, {size: 800})
             .toPromise()
             .then(function(result) {
-                document.querySelector('input.isbn').value = result.codeResult.code
+                //document.querySelector('input.isbn').value = result.codeResult.code
                 code = result.codeResult.code
                 getAPIdata()
             })
             .catch(function() {
-                document.querySelector('input.isbn').value = "Not Found"
+                //document.querySelector('input.isbn').value = "Not Found"
             })
             .then(function() {
                 this.attachListeners()
@@ -31,10 +27,10 @@ var App = {
     },
     attachListeners: function() {
         var self = this,
-            button = document.querySelector('.input-field input + .button.scan'),
+            button = document.querySelector('.button'),
             fileInput = document.querySelector('.input-field input[type=file]')
 
-        button.addEventListener("click", function onClick(e) {
+            button.addEventListener("click", function onClick(e) {
             e.preventDefault()
             button.removeEventListener("click", onClick)
             document.querySelector('.input-field input[type=file]').click()
@@ -50,7 +46,8 @@ var App = {
     }
 }
 App.init()
-
+const firstpart = document.querySelector('.container')
+const secondpart = document.querySelector('.confirmation')
 function getAPIdata() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/" // Use a proxy to avoid CORS error
     const api_key = "dak11o3uirjgcd561m0751e5l0y7bl"
@@ -58,10 +55,18 @@ function getAPIdata() {
     fetch(url)
             .then(response => response.json())
             .then((data) => {
-                document.getElementById("BarcodeNumber").innerHTML = (data.products[0].barcode_number)
-                document.getElementById("ProductName").innerHTML = (data.products[0].product_name)
-                document.getElementById("Category").innerHTML = (data.products[0].category)            })
+                //document.getElementById("BarcodeNumber").innerHTML = (data.products[0].barcode_number)
+                //document.getElementById("ProductName").innerHTML = (data.products[0].product_name)
+                //document.getElementById("Category").innerHTML = (data.products[0].category) 
+                nextpart()
+                document.querySelector('.item-model') .innerHTML = (data.products[0].product_name)
+                localStorage.setItem('type',(data.products[0].product_name))          
+            })
             .catch(err => { 
                 throw err 
             })
+}
+function nextpart(){
+    firstpart.classList.toggle('invisible')
+    secondpart.classList.toggle('invisible')
 }
