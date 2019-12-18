@@ -48,6 +48,7 @@ var App = {
 App.init()
 const firstpart = document.querySelector('.container')
 const secondpart = document.querySelector('.confirmation')
+const continuebutton = document.querySelector('.path')
 function getAPIdata() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/" // Use a proxy to avoid CORS error
     const api_key = "dak11o3uirjgcd561m0751e5l0y7bl"
@@ -60,7 +61,8 @@ function getAPIdata() {
                 //document.getElementById("Category").innerHTML = (data.products[0].category) 
                 nextpart()
                 document.querySelector('.item-model') .innerHTML = (data.products[0].product_name)
-                sessionStorage.setItem('phonetype',(data.products[0].product_name))          
+                sessionStorage.setItem('phonetype',(data.products[0].product_name))
+                sessionStorage.setItem('devisetype',(data.products[0].category))          
             })
             .catch(err => { 
                 throw err 
