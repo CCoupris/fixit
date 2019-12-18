@@ -2,7 +2,29 @@ const clasicButton = document.querySelector('.js-clasic')
 const premiumButton = document.querySelector('.js-premium')
 const clasicPriceButton = document.querySelector('.js-price-tag-clasic')
 const premiumPriceButton = document.querySelector('.js-price-tag-premium')
-
+const phoneproblem = sessionStorage.getItem('phoneproblem')
+const premium = document.querySelector('.js-price-tag-premium')
+const classic = document.querySelector('.js-price-tag-clasic')
+switch(phoneproblem){
+  case 'La batterie':
+    classic.innerHTML='69.99€'
+    premium.innerHTML='104.99€'
+    break;
+  case 'L\'écran':
+    classic.innerHTML='229.99€'
+    premium.innerHTML='264.99€'
+    break;
+  case 'Les connecteurs':
+    classic.innerHTML='59.99€'
+    premium.innerHTML='94.99€'
+    break;
+  case 'L\'appareil photo':
+    classic.innerHTML='149.99€'
+    premium.innerHTML='184.99€'
+    break;
+    default:
+      console.log('Sorry, you need to go to the previous page to make your test')
+}
 
 // Option selection
 clasicButton.addEventListener('click', () =>

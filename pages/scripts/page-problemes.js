@@ -18,10 +18,12 @@ function toggleBattery() {
   } else {
     batteryButton.style.backgroundColor = "white";
   }
+  
 }
     toggleBattery()
 batteryButton.addEventListener('click', () =>
 {
+    sessionStorage.setItem('phoneproblem','La batterie')
     toggleBattery()
     continueButton.style.backgroundColor = "#B42F3C"
     batteryIcon.style.backgroundColor = "white"
@@ -38,6 +40,7 @@ function toggleScreen() {
     toggleScreen()
 screenButton.addEventListener('click', () =>
 {
+  sessionStorage.setItem('phoneproblem','L\'écran')
     toggleScreen()
     continueButton.style.backgroundColor = "#B42F3C"
     screenIcon.style.backgroundColor = "white"
@@ -54,6 +57,7 @@ function toggleConnectors() {
     toggleConnectors()
 connectorsButton.addEventListener('click', () =>
 {
+    sessionStorage.setItem('phoneproblem','Les connecteurs')
     toggleConnectors()
     continueButton.style.backgroundColor = "#B42F3C"
     connectorsIcon.style.backgroundColor = "white"
@@ -70,6 +74,7 @@ function togglePhoto() {
     togglePhoto()
 photoButton.addEventListener('click', () =>
 {
+  sessionStorage.setItem('phoneproblem','L\'appareil photo')
     togglePhoto()
     continueButton.style.backgroundColor = "#B42F3C"
     photoIcon.style.backgroundColor = "white"
