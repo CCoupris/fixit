@@ -125,9 +125,14 @@ h4
   margin-left: -3em;
 }
 
-.card
+.cards
 {
   display: flex;
   flex-direction: row;
-  
+  flex-wrap: wrap;
+}
+
+.card-information
+{
+  margin: 0px 10px;
 }
