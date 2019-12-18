@@ -1,6 +1,5 @@
 body
 {
-  text-align: center;
   display: flex;
   font-family: 'Nunito', sans-serif;
   font-size: 12px;
@@ -102,14 +101,23 @@ h4
   padding: 5px 15px;
 }
 
+.messenger-demand
+{
+  font-size: 14px;
+}
+
 .no-messenger
 {
   color: #474747;
+  margin: 10px auto;
 }
 
 .button-center
 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 /* Order list */
