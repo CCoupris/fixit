@@ -2,7 +2,9 @@ const homeButton = document.querySelector('.js-button-home')
 const workButton = document.querySelector('.js-button-work')
 const continueButton = document.querySelector('.js-continue-button')
 const test = sessionStorage.getItem('price')
-
+const day = document.querySelectorAll('.js-day')
+const hours = document.querySelectorAll('.js-hours')
+const validate = document.querySelector('.button-valid')
 // Location selection
 function toggleHome() {
   if (homeButton.style.backgroundColor == "white") {
@@ -18,7 +20,11 @@ function toggleHome() {
     toggleHome()
     continueButton.style.backgroundColor = "#B42F3C"
 })
-
+validate.addEventListener('click', () =>
+{
+  sessionStorage.setItem('adresse',document.getElementById("searchinput").value)
+  console.log(document.getElementById("searchinput").value)
+})
     //
 function toggleWork() {
   if (workButton.style.backgroundColor == "white") {
@@ -34,8 +40,38 @@ workButton.addEventListener('click', () =>
     toggleWork()
     continueButton.style.backgroundColor = "#B42F3C"
 })
-function toggleday(){
-  
+function toggleday(x){
+
+    if (x.style.backgroundColor == "white") {
+      x.style.backgroundColor = "#B42F3C";
+    } else {
+      x.style.backgroundColor = "white";
+    }
+  }
+for(let i=0;i<day.length;i++){
+  for(let i=0;i<hours.length;i++){
+    hours[i].addEventListener('click',() =>
+    {
+      sessionStorage.setItem('hours',hours[i].innerHTML)
+      togglehours(hours[i])
+      continueButton.style.backgroundColor = "#B42F3C"
+    })
+    }
+  day[i].addEventListener('click',() =>
+  {
+    sessionStorage.setItem('day',day[i].innerHTML)
+    toggleday(day[i])
+    continueButton.style.backgroundColor = "#B42F3C"
+  })
+}
+
+function togglehours(x){
+
+  if (x.style.backgroundColor == "white") {
+    x.style.backgroundColor = "#B42F3C";
+  } else {
+    x.style.backgroundColor = "white";
+  }
 }
 
 /*// Progress bar variables
