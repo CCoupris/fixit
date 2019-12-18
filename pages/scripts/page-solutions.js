@@ -32,6 +32,8 @@ clasicButton.addEventListener('click', () =>
     clasicButton.style.backgroundColor = "#B42F3C"
     clasicPriceButton.style.color = "#ffffff"
     clasicButton.style.color = "#ffffff"
+    sessionStorage.setItem('pricetype','classic')
+    sessionStorage.setItem('price',classic.innerHTML)
 })
 
 premiumButton.addEventListener('click', () =>
@@ -39,6 +41,8 @@ premiumButton.addEventListener('click', () =>
     premiumButton.style.backgroundColor = "#B42F3C"
     premiumPriceButton.style.color = "#ffffff"
     premiumButton.style.color = "#ffffff"
+    sessionStorage.setItem('pricetype','Premium')
+    sessionStorage.setItem('price',premium.innerHTML)
 })
 
 
