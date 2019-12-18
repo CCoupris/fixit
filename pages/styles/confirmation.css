@@ -101,6 +101,13 @@ h4
   padding: 5px 15px;
 }
 
+.follow
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .messenger-demand
 {
   font-size: 14px;
@@ -160,6 +167,15 @@ input{
   padding: 0 15px;
   height: 30px;
   font-weight: bold;
+}
+
+#dateinput1{
+  width: 20px;
+}
+
+#dateinput2{
+  width: 40px;
+  margin-left: 6px;
 }
 
 ::placeholder {

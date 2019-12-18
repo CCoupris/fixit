@@ -25,7 +25,7 @@
 					     </div>
 					     <div>
 					       <label for="phoneinput">Numéro de téléphone</label>
-					       <input type="text" name="phone" id="phoneinput" placeholder="06 78 83 48 20"/>
+					       <input type="tel" name="phone" id="phoneinput" placeholder="06 78 83 48 20"/>
 					     </div>
 					     <div>
 					       <label for="emailinput">Adresse mail</label>
@@ -37,7 +37,6 @@
 					     </div>
 							 <button class="button-valid">Valider</button>
 					    </form>
-
           </div>
         </li>
         <li class="faqItem">
@@ -60,35 +59,50 @@
         <li class="faqItem">
           <h4>Paiement</h4>
           <div class="answer">
-			  	<div class="cards">
-						<div class="card-information">
-							<img src="../images/visa.svg" alt="visa" class="visa">
-							<p>Visa</p>
+				  	<div class="cards">
+							<div class="card-information">
+								<img src="../images/visa.svg" alt="visa" class="visa">
+								<p>Visa</p>
+							</div>
+							<div class="card-information">
+								<img src="../images/cb.svg" alt="CB" class="CB">
+								<p>CB</p>
+							</div>
+							<div class="card-information">
+								<img src="../images/mastercard.svg" alt="mastercard" class="mastercard">
+								<p>Mastercard</p>
+							</div>
+							<div>
+								<img src="../images/maestro.svg" alt="maestro" class="maestro">
+								<p>Maestro</p>
+							</div>
+							<div class="card-information">
+								<img src="../images/paypal.svg" alt="paypal" class="paypal">
+								<p>Paypal</p>
+							</div>
+							<button class="button-valid">Valider</button>
 						</div>
-						<div class="card-information">
-							<img src="../images/cb.svg" alt="CB" class="CB">
-							<p>CB</p>
-						</div>
-						<div class="card-information">
-							<img src="../images/mastercard.svg" alt="mastercard" class="mastercard">
-							<p>Mastercard</p>
-						</div>
-						<div>
-							<img src="../images/maestro.svg" alt="maestro" class="maestro">
-							<p>Maestro</p>
-						</div>
-						<div class="card-information">
-							<img src="../images/paypal.svg" alt="paypal" class="paypal">
-							<p>Paypal</p>
-						</div>
-						<button class="button-valid">Valider</button>
-				</div>
+						<form method="post" action="#">
+						   <div>
+						      <label for="nameinput">Titulaire de la carte</label>
+						      <input type="text" name="name" id="nameinput" placeholder="Franck Dupont"/>
+						    </div>
+						    <div>
+						      <label for="cardnumberinput">Numéro de carte</label>
+						      <input type="text" name="card" id="cardnumberinput" placeholder="0000 0000 0000 0000"/>
+						    </div>
+						    <div>
+						      <label for="dateinput">Date d'expiration</label>
+						      <input type="text" name="email" id="dateinput1" placeholder="01"/><input type="text" name="email" id="dateinput2" placeholder="2022"/>
+						    </div>
+							 	<button class="button-valid">Valider</button>
+					    </form>
           </div>
         </li>
         <li class="faqItem">
           <h4>Contact</h4>
           <div class="answer">
-            <p class="messenger-demand">Nous avons votre email, mais pour garder contact de manière plus efficace, rejoignez nous sur Messenger !</p>
+            <p>Nous avons votre email, mais pour garder contact de manière plus efficace, rejoignez nous sur Messenger !</p>
 						<div class="button-center">
 							<button class="button-connect-ship">Se connecter</button>
 							<a href="#" class="no-messenger">Je ne souhaite pas utiliser Messenger</a>
@@ -96,7 +110,7 @@
 					</div>
         </li>
       </ul>
-			<button class="button-connect-ship">Suivre ma commande</button>
+			<button class="button-connect-ship follow">Suivre ma commande</button>
 		</div>
 		<script type="text/javascript" src="scripts/confirmation.js"></script>
 	</body>
