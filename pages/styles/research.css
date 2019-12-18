@@ -80,3 +80,118 @@ body
     line-height: 33px;
     color: #474747;
 }
+.invisible{
+  display: none;
+}
+.confirmation
+{
+  width: 310px;
+  margin: 0 auto;
+}
+.confirmation .scan-verif .icon-style
+{
+  margin-top: 20px;
+}
+
+.confirmation .scan-verif .confirmation-item
+{
+  margin-top: 35px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  color: #474747;
+  line-height: 17px;
+}
+
+.confirmation .scan-verif .confirmation-item .item-model
+{
+  color: #B42F3C;
+}
+
+.confirmation .scan-verif .continue-button
+{
+  margin-top: 60px;
+  padding-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 230px;
+  height: 40px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background: #B42F3C;
+}
+
+.confirmation .scan-verif .continue-button .uppercase
+{
+  color: white;
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.confirmation .scan-verif .case-error
+{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 8px;
+  color: #474747;
+}
+
+.confirmation .scan-verif .info-text-1
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.confirmation .scan-verif .info-text-2
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.confirmation .scan-verif .info-text-3
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.confirmation .scan-verif .info-text-4
+{
+  display: flex;
+  justify-content: flex-start;
+  color: #474747;
+}
+
+.confirmation .scan-verif .undraw-cancel
+{
+  margin-bottom: 30px;
+}
+
+.confirmation .scan-verif .other-links
+{
+  margin-top: 20px;
+  line-height: 35px;
+}
+
+.confirmation .scan-verif .other-links .scan
+{
+  color: #474747;
+}
+
+.confirmation .scan-verif .other-links .import
+{
+  color: #474747;
+}
+
+.confirmation .scan-verif .other-links .enter, a, a:hover
+{
+  color: #474747;
+}
