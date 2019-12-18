@@ -7,17 +7,17 @@ body
   font-size: 16px;
 }
 
-.container
+.confirmation
 {
   width: 310px;
   margin: 0 auto;
 }
-.container .scan-verif .icon-style
+.confirmation .scan-verif .icon-style
 {
   margin-top: 20px;
 }
 
-.container .scan-verif .confirmation-item
+.confirmation .scan-verif .confirmation-item
 {
   margin-top: 35px;
   font-family: "Nunito";
@@ -27,12 +27,12 @@ body
   line-height: 17px;
 }
 
-.container .scan-verif .confirmation-item .item-model
+.confirmation .scan-verif .confirmation-item .item-model
 {
   color: #B42F3C;
 }
 
-.container .scan-verif .continue-button
+.confirmation .scan-verif .continue-button
 {
   margin-top: 60px;
   padding-top: 7px;
@@ -47,7 +47,7 @@ body
   background: #B42F3C;
 }
 
-.container .scan-verif .continue-button .uppercase
+.confirmation .scan-verif .continue-button .uppercase
 {
   color: white;
   font-family: "Nunito";
@@ -57,7 +57,7 @@ body
   text-decoration: none;
 }
 
-.container .scan-verif .case-error
+.confirmation .scan-verif .case-error
 {
   margin-top: 60px;
   margin-bottom: 50px;
@@ -69,53 +69,56 @@ body
   color: #474747;
 }
 
-.container .scan-verif .info-text-1
+.confirmation .scan-verif .info-text-1
 {
   display: flex;
   justify-content: flex-start;
 }
 
-.container .scan-verif .info-text-2
+.confirmation .scan-verif .info-text-2
 {
   display: flex;
   justify-content: flex-start;
 }
 
-.container .scan-verif .info-text-3
+.confirmation .scan-verif .info-text-3
 {
   display: flex;
   justify-content: flex-start;
 }
 
-.container .scan-verif .info-text-4
+.confirmation .scan-verif .info-text-4
 {
   display: flex;
   justify-content: flex-start;
   color: #474747;
 }
 
-.container .scan-verif .undraw-cancel
+.confirmation .scan-verif .undraw-cancel
 {
   margin-bottom: 30px;
 }
 
-.container .scan-verif .other-links
+.confirmation .scan-verif .other-links
 {
   margin-top: 20px;
   line-height: 35px;
 }
 
-.container .scan-verif .other-links .scan
+.confirmation .scan-verif .other-links .scan
 {
   color: #474747;
 }
 
-.container .scan-verif .other-links .import
+.confirmation .scan-verif .other-links .import
 {
   color: #474747;
 }
 
-.container .scan-verif .other-links .enter, a, a:hover
+.confirmation .scan-verif .other-links .enter, a, a:hover
 {
   color: #474747;
+}
+.invisible{
+  display: none;
 }
