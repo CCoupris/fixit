@@ -7,7 +7,9 @@ const screenIcon = document.querySelector('.js-screen-icon')
 const connectorsIcon = document.querySelector('.js-connectors-icon')
 const photoIcon = document.querySelector('.js-photo-icon')
 const continueButton = document.querySelector('.js-continue-button')
-
+const name = sessionStorage.getItem('phonetype')
+const objectName = document.querySelector('.object-name')
+objectName.innerHTML = name
 
 // Button selection
 function toggleBattery() {

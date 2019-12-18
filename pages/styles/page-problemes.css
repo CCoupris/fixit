@@ -97,23 +97,20 @@
 
 
     /* Informations on the object scanned */
-.object-founded img
+.object-founded
 {
-    position: absolute;
-    width: 101px;
-    height: 101px;
-    left: 137px;
-    top: 56px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .object-name
 {
-    width: 80px;
+    width: 250px;
     height: 27px;
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 27px;
     display: flex;
     align-items: center;
