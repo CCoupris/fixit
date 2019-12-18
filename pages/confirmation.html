@@ -18,11 +18,26 @@
         <li class="faqItem is-open">
           <h4>Vos coordonnées</h4>
           <div class="answer">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<form method="post" action="inscription.php">
+						<form method="post" action="#">
+					    <div>
+					       <label for="nameinput">Prénom, Nom</label>
+					       <input type="text" name="name" id="nameinput" placeholder="John"/>
+					     </div>
+					     <div>
+					       <label for="phoneinput">Numéro de téléphone</label>
+					       <input type="text" name="phone" id="phoneinput" placeholder="jonathan.smith@john.com"/>
+					     </div>
+					     <div>
+					       <label for="emailinput">Adresse mail</label>
+					       <input type="text" name="email" id="emailinput" placeholder="Project Inquiry"/>
+					     </div>
+							 <div>
+					       <label for="">Mot de passe</label>
+					       <input type="text" name="email" id="emailinput" placeholder="jonathan.smith@john.com"/>
+					     </div>
+							 <button class="button-valid">Valider</button>
+					    </form>
 
-						</form>
-            <button class="button-valid">Valider</button>
           </div>
         </li>
         <li class="faqItem">
@@ -46,7 +61,6 @@
           <h4>Paiement</h4>
           <div class="answer">
 						<div class="card">
-
 							<img src="../images/visa.svg" alt="visa" class="visa">
 							<p>Visa</p>
 						</div>

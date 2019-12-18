@@ -21,7 +21,7 @@ class Open {
     }
   }
 
-let list = document.querySelectorAll("li")
+let list = document.querySelectorAll("h4")
 let faq = new Open()
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function() {
