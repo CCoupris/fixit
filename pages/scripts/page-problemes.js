@@ -17,7 +17,7 @@ const batteryIconlaptop = document.querySelector('.js-battery-icon-laptop')
 const screenIconlaptop = document.querySelector('.js-screen-icon-laptop')
 const connectorsIconlaptop = document.querySelector('.js-connectors-icon-laptop')
 const photoIconlaptop = document.querySelector('.js-photo-icon-laptop')
-const continueButtonlaptop = document.querySelector('.js-continue-button-laptop')
+const continueButtonlaptop = document.querySelector('.link-continue-button-laptop')
 //information session
 const name = sessionStorage.getItem('phonetype')
 const objectName = document.querySelector('.phone')
@@ -122,7 +122,7 @@ function toggleBatterylaptop() {
     toggleBatterylaptop()
 batteryButtonlaptop.addEventListener('click', () =>
 {
-    sessionStorage.setItem('phoneproblem','l\'écran')
+    sessionStorage.setItem('phoneproblem','L\'écran')
     toggleBatterylaptop()
     continueButtonlaptop.style.backgroundColor = "#B42F3C"
     batteryIconlaptop.style.backgroundColor = "white"
@@ -139,7 +139,7 @@ function toggleScreenlaptop() {
     toggleScreenlaptop()
 screenButtonlaptop.addEventListener('click', () =>
 {
-  sessionStorage.setItem('phoneproblem','la batterie')
+  sessionStorage.setItem('phoneproblem','La batterie')
     toggleScreenlaptop()
     continueButtonlaptop.style.backgroundColor = "#B42F3C"
     screenIconlaptop.style.backgroundColor = "white"

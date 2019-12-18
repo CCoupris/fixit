@@ -12,8 +12,9 @@ function toggleHome() {
   }
 }
     toggleHome()
-homeButton.addEventListener('click', () =>
+    homeButton.addEventListener('click', () =>
 {
+    sessionStorage.setItem('where','Chez vous')
     toggleHome()
     continueButton.style.backgroundColor = "#B42F3C"
 })
@@ -29,10 +30,13 @@ function toggleWork() {
     toggleWork()
 workButton.addEventListener('click', () =>
 {
+    sessionStorage.setItem('where','Au travail')
     toggleWork()
     continueButton.style.backgroundColor = "#B42F3C"
 })
-
+function toggleday(){
+  
+}
 
 /*// Progress bar variables
 let step = 'step1'

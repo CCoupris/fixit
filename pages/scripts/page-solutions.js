@@ -3,6 +3,7 @@ const premiumButton = document.querySelector('.js-premium')
 const clasicPriceButton = document.querySelector('.js-price-tag-clasic')
 const premiumPriceButton = document.querySelector('.js-price-tag-premium')
 const phoneproblem = sessionStorage.getItem('phoneproblem')
+console.log(phoneproblem)
 const premium = document.querySelector('.js-price-tag-premium')
 const classic = document.querySelector('.js-price-tag-clasic')
 
@@ -99,7 +100,7 @@ premiumButton.addEventListener('click', () =>
 clasicButtonlaptop.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','classic')
-  sessionStorage.setItem('price',classic.innerHTML)
+  sessionStorage.setItem('price',classiclaptop.innerHTML)
   clasicButtonlaptop.style.backgroundColor = "#B42F3C"
   clasicPriceButtonlaptop.style.color = "#ffffff"
   clasicButtonlaptop.style.color = "#ffffff"
@@ -109,7 +110,7 @@ clasicButtonlaptop.addEventListener('click', () =>
 premiumButtonlaptop.addEventListener('click', () =>
 {
   sessionStorage.setItem('pricetype','premium')
-  sessionStorage.setItem('price',premium.innerHTML)
+  sessionStorage.setItem('price',premiumlaptop.innerHTML)
   premiumButtonlaptop.style.backgroundColor = "#B42F3C"
   premiumPriceButtonlaptop.style.color = "#ffffff"
   premiumButtonlaptop.style.color = "#ffffff"
