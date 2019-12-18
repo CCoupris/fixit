@@ -5,27 +5,68 @@ const premiumPriceButton = document.querySelector('.js-price-tag-premium')
 const phoneproblem = sessionStorage.getItem('phoneproblem')
 const premium = document.querySelector('.js-price-tag-premium')
 const classic = document.querySelector('.js-price-tag-clasic')
-switch(phoneproblem){
-  case 'La batterie':
-    classic.innerHTML='69.99€'
-    premium.innerHTML='104.99€'
+const path_one = document.querySelector('.path1')
+const path_two = document.querySelector('.path2')
+switch (objecttype) {
+  case 'Electronics > Computers > Desktop Computers':
+    path_one.classList.toggle('invisible')
     break;
-  case 'L\'écran':
-    classic.innerHTML='229.99€'
-    premium.innerHTML='264.99€'
+  case 'Electronics > Communications > Telephony > Mobile Phones':
+    path_two.classList.toggle('invisible')
     break;
-  case 'Les connecteurs':
-    classic.innerHTML='59.99€'
-    premium.innerHTML='94.99€'
-    break;
-  case 'L\'appareil photo':
-    classic.innerHTML='149.99€'
-    premium.innerHTML='184.99€'
-    break;
-    default:
-      console.log('Sorry, you need to go to the previous page to make your test')
-      break
+  default:
+    path_two.classList.toggle('invisible')
+    break
 }
+if(objecttype == 'Electronics > Communications > Telephony > Mobile Phones')
+{
+  switch(phoneproblem){
+    case 'La batterie':
+      classic.innerHTML='69.99€'
+      premium.innerHTML='104.99€'
+      break;
+    case 'L\'écran':
+      classic.innerHTML='229.99€'
+      premium.innerHTML='264.99€'
+      break;
+    case 'Les connecteurs':
+      classic.innerHTML='59.99€'
+      premium.innerHTML='94.99€'
+      break;
+    case 'L\'appareil photo':
+      classic.innerHTML='149.99€'
+      premium.innerHTML='184.99€'
+      break;
+      default:
+        console.log('Sorry, you need to go to the previous page to make your test')
+        break
+  }  
+}
+else
+{
+  switch(phoneproblem){
+    case 'L\'écran':
+      classic.innerHTML='80,60€'
+      premium.innerHTML='140.99€'
+      break;
+    case 'La batterie':
+      classic.innerHTML='80.99€'
+      premium.innerHTML='120.99€'
+      break;
+    case 'Les connecteurs':
+      classic.innerHTML='59.99€'
+      premium.innerHTML='104.99€'
+      break;
+    case 'Le clavier':
+      classic.innerHTML='90.99€'
+      premium.innerHTML='120.99€'
+      break;
+      default:
+        console.log('Sorry, you need to go to the previous page to make your test')
+        break
+  }  
+}
+
 
 // Option selection
 clasicButton.addEventListener('click', () =>

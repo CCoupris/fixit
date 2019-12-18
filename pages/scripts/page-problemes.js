@@ -122,7 +122,7 @@ function toggleBatterylaptop() {
     toggleBatterylaptop()
 batteryButtonlaptop.addEventListener('click', () =>
 {
-    sessionStorage.setItem('phoneproblem','La batterie')
+    sessionStorage.setItem('phoneproblem','l\'écran')
     toggleBatterylaptop()
     continueButtonlaptop.style.backgroundColor = "#B42F3C"
     batteryIconlaptop.style.backgroundColor = "white"
@@ -139,7 +139,7 @@ function toggleScreenlaptop() {
     toggleScreenlaptop()
 screenButtonlaptop.addEventListener('click', () =>
 {
-  sessionStorage.setItem('phoneproblem','L\'écran')
+  sessionStorage.setItem('phoneproblem','la batterie')
     toggleScreenlaptop()
     continueButtonlaptop.style.backgroundColor = "#B42F3C"
     screenIconlaptop.style.backgroundColor = "white"
@@ -173,7 +173,7 @@ function togglePhotolaptop() {
     togglePhotolaptop()
 photoButtonlaptop.addEventListener('click', () =>
 {
-  sessionStorage.setItem('phoneproblem','L\'appareil photo')
+  sessionStorage.setItem('phoneproblem','Le clavier')
     togglePhotolaptop()
     continueButtonlaptop.style.backgroundColor = "#B42F3C"
     photoIconlaptop.style.backgroundColor = "white"
