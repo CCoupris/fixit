@@ -21,7 +21,7 @@ class Open {
     }
   }
 
-let list = document.querySelectorAll("h4")
+let list = document.querySelectorAll("li")
 let faq = new Open()
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function() {
@@ -30,7 +30,7 @@ for (let i = 0; i < list.length; i++) {
 }
 
 
-// CARD FORM 
+// CARD FORM
 const cardHolder = document.querySelector('.js-card-holder')
 const cardInformation = document.querySelector('.js-card-information')
 const holderDisplay = document.querySelector('.card-holder-display')
