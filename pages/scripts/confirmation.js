@@ -69,9 +69,10 @@ const jspremium = document.querySelector('.js-premium')
 const jsprice = document.querySelector('.js-price')
 const jsday = document.querySelector('.js-day')
 const jsaddress = document.querySelector('.js-address')
-jsreparation.innerHTML= "appareil "+name+" pour un problème sur "+phoneprob
+
 jspremium.innerHTML= pricetype
 jsreparation.innerHTML = price 
 jsday.innerHTML = "Rendez-vous le "+day+" à "+hours
 jsaddress.innerHTML = where +" au " + address
 jsprice.innerHTML = price
+jsreparation.innerHTML="L'appareil "+name+" pour un problème sur "+phoneprob
