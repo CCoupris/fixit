@@ -32,22 +32,22 @@ for (let i = 0; i < list.length; i++) {
 
 // CARD FORM
 const cardHolder = document.querySelector('.js-card-holder')
-const cardInformation = document.querySelector('.js-card-information')
+const cardInformation = document.querySelectorAll('.js-card-information')
 const holderDisplay = document.querySelector('.card-holder-display')
 const validateButton = document.querySelector('.js-button-valid')
 
     //
-function toggleColor() {
-  if (cardInformation.style.backgroundColor == "white") {
-    cardInformation.style.backgroundColor = "#B42F3C";
+function toggleColor(x) {
+  if (x.style.backgroundColor == "white") {
+    x.style.backgroundColor = "#B42F3C";
   } else {
-    cardInformation.style.backgroundColor = "white";
+    x.style.backgroundColor = "white";
   }
 }
-    toggleColor()
-cardInformation.addEventListener('click', () =>
+for(let i=0; i< cardInformation.length;i++){
+cardInformation[i].addEventListener('click', () =>
 {
-    toggleColor()
+    toggleColor(cardInformation[i])
     validateButton.style.backgroundColor = "#B42F3C"
 })
 
@@ -55,7 +55,7 @@ validateButton.addEventListener("click", () =>
 {
   cardHolder.classList.toggle('card-holder-display')
 })
-
+}
 const name = sessionStorage.getItem('phonetype')
 const phoneprob = sessionStorage.getItem('phoneproblem')
 const pricetype = sessionStorage.getItem('pricetype')
