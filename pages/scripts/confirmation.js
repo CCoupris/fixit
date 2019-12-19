@@ -44,18 +44,20 @@ function toggleColor(x) {
     x.style.backgroundColor = "white";
   }
 }
+validateButton.addEventListener("click", () =>
+{
+  cardHolder.classList.toggle('card-holder-display')
+})
 for(let i=0; i< cardInformation.length;i++){
 cardInformation[i].addEventListener('click', () =>
 {
     toggleColor(cardInformation[i])
     validateButton.style.backgroundColor = "#B42F3C"
 })
-
-validateButton.addEventListener("click", () =>
-{
-  cardHolder.classList.toggle('card-holder-display')
-})
 }
+
+
+
 const name = sessionStorage.getItem('phonetype')
 const phoneprob = sessionStorage.getItem('phoneproblem')
 const pricetype = sessionStorage.getItem('pricetype')
