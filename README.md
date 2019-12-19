@@ -12,7 +12,7 @@ Just here ! https://fixitfr.netlify.com/
 ## Team
 
 * [Andy Chea](https://github.com/sassanTMAX)
-* [Catinca Gheorhui](https://github.com/CatincaG)
+* [Catinca Gheorghiu](https://github.com/CatincaG)
 * [Charlotte Blassel](https://github.com/charlotteblassel)
 * [Cloé Coupris](https://github.com/CCoupris)
 * [Edouard Eisenfisz](https://github.com/Azenstrange)
