@@ -29,16 +29,37 @@ body
 {
   position: relative;
   display: flex;
+  margin-top: 100px;
+  margin-left: -50px;
+  transform: rotate(90deg);
 }
 
 .progress-track
 {
+  transform: rotate(90deg);
   position: absolute;
-  top: 5px;
-  height: 100%;
+  top: 6px;
+  height: 298px;
   width: 5px;
   background-color: #dfe3e4;
   z-index: -1;
+  left: 230px;
+}
+
+.commande{
+  transform: translate(10px, -150px);
+}
+.reception{
+  transform: translate(10px, -115px);
+}
+.reparation{
+  transform: translate(10px, -80px);
+}
+.repared{
+  transform: translate(10px, -46px);
+}
+.delivery{
+  transform: translate(10px, -10px);
 }
 
 /*Each Step on the Progress Bar*/
@@ -49,6 +70,7 @@ body
   font-size: 12px;
   font-family: "Nunito";
   text-align: center;
+  transform: translate(50px, 147px);
 }
 
 /*Hide the final step's progress bar*/
@@ -119,6 +141,9 @@ body
   background: #b42f3c;
   animation: nextStep 1s;
   animation-fill-mode: forwards;
+}
+.rotate{
+  transform: rotate(-90deg)
 }
 
 /*Pulse animation for Step's circle in active state*/
