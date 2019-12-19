@@ -6,9 +6,11 @@ const day = document.querySelectorAll('.js-day')
 const hours = document.querySelectorAll('.js-hours')
 const validate = document.querySelector('.button-valid')
 // Location selection
+console.log(hours)
 function toggleHome() {
   if (homeButton.style.backgroundColor == "white") {
     homeButton.style.backgroundColor = "#B42F3C";
+
   } else {
     homeButton.style.backgroundColor = "white";
   }
@@ -23,7 +25,6 @@ function toggleHome() {
 validate.addEventListener('click', () =>
 {
   sessionStorage.setItem('adresse',document.getElementById("searchinput").value)
-  console.log(document.getElementById("searchinput").value)
 })
     //
 function toggleWork() {
@@ -40,6 +41,14 @@ workButton.addEventListener('click', () =>
     toggleWork()
     continueButton.style.backgroundColor = "#B42F3C"
 })
+function togglehours(x){
+  if (x.style.backgroundColor == "white") {
+    x.style.backgroundColor = "#B42F3C";
+
+  } else {
+    x.style.backgroundColor = "white";
+  }
+}
 function toggleday(x){
 
     if (x.style.backgroundColor == "white") {
@@ -49,11 +58,11 @@ function toggleday(x){
     }
   }
 for(let i=0;i<day.length;i++){
-  for(let i=0;i<hours.length;i++){
-    hours[i].addEventListener('click',() =>
+  for(let j=0;j<hours.length;j++){
+    hours[j].addEventListener('click',() =>
     {
-      sessionStorage.setItem('hours',hours[i].innerHTML)
-      togglehours(hours[i])
+      sessionStorage.setItem('hours',hours[j].innerHTML)
+      togglehours(hours[j])
       continueButton.style.backgroundColor = "#B42F3C"
     })
     }
@@ -65,14 +74,7 @@ for(let i=0;i<day.length;i++){
   })
 }
 
-function togglehours(x){
 
-  if (x.style.backgroundColor == "white") {
-    x.style.backgroundColor = "#B42F3C";
-  } else {
-    x.style.backgroundColor = "white";
-  }
-}
 
 /*// Progress bar variables
 let step = 'step1'
