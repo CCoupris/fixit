@@ -71,8 +71,8 @@ const jsday = document.querySelector('.js-day')
 const jsaddress = document.querySelector('.js-address')
 
 jspremium.innerHTML= pricetype
-jsreparation.innerHTML = price 
+jsreparation.innerHTML = price
 jsday.innerHTML = "Rendez-vous le "+day+" à "+hours
-jsaddress.innerHTML = where +" au " + address
+jsaddress.innerHTML = where +" à " + address
 jsprice.innerHTML = price
 jsreparation.innerHTML="L'appareil "+name+" pour un problème sur "+phoneprob

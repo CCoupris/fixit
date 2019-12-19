@@ -148,6 +148,7 @@
 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .battery-button
@@ -197,14 +198,14 @@
     outline: none;
 }
 
-.screen-button
-{
-  padding-top: 20px;
-}
-
 .keyboard-button
 {
   padding-top: 36px;
+}
+
+.battery-padding
+{
+ padding-top: 22px;
 }
 
 .four-choices
@@ -248,4 +249,9 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+a
+{
+  text-decoration: none;
 }
