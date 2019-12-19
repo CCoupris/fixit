@@ -105,10 +105,20 @@ h4
   padding: 5px 15px;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 }
 
 .follow
 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 185px;
+}
+
+.connect
+{
+  width: 130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
