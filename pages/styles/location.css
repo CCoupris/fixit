@@ -429,3 +429,8 @@ input{
   font-size: 0.9em;
   font-family: 'Nunito', sans-serif;
 }
+
+.valid
+{
+  text-decoration: none;
+}
