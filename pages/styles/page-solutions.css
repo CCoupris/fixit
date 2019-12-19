@@ -139,6 +139,10 @@ body
   100% { width: 100%; }
 }
 
+h2, h3
+{
+  color: #474747;
+}
 
 .clasic-premium
 {
