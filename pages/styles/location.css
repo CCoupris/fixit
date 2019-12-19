@@ -340,6 +340,23 @@ h4
     border-radius: 10px;
 }
 
+.faqItem.is-open .answer .day-style-2
+{
+  margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #474747;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 .faqItem.is-open .answer .day-other-link
 {
     margin-top: 25px;
