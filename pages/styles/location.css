@@ -422,7 +422,10 @@ input{
   padding: 0 15px;
   height: 30px;
   font-weight: bold;
+
 }
+
+
 
 ::placeholder {
   color: #D4D4D6;
