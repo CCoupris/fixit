@@ -17,5 +17,12 @@ Just here ! https://fixitfr.netlify.com/
 * [Cloé Coupris](https://github.com/CCoupris)
 * [Edouard Eisenfisz](https://github.com/Azenstrange)
 
+## API
+
+* [Bardecodelookup](https://www.barcodelookup.com/)
+
+## Module
+
+* [QuaggaJS](https://serratus.github.io/quaggaJS/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a29309ee-506e-4049-ad0c-6e5e1bb52b20/deploy-status)](https://app.netlify.com/sites/fixitfr/deploys)
