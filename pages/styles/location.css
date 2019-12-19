@@ -422,10 +422,13 @@ input{
   padding: 0 15px;
   height: 30px;
   font-weight: bold;
-
 }
 
-
+#searchinput{
+  color: #474747;
+  font-size: 0.9em;
+  font-family: 'Nunito', sans-serif;
+}
 
 ::placeholder {
   color: #D4D4D6;
